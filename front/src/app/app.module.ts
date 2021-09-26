@@ -7,20 +7,30 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { MatIconModule } from '@angular/material/icon';
-import { FooterComponent } from './component/footer/footer.component';  
+import { FooterComponent } from './component/footer/footer.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ButtonsComponent } from './component/buttons/buttons.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';      
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatGridListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule,
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
