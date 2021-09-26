@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
-import { MatIconModule } from '@angular/material/icon';  
+import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from './component/footer/footer.component';  
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
