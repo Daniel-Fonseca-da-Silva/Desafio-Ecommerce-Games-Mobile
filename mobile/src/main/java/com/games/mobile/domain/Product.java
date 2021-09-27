@@ -10,77 +10,79 @@ import java.util.Objects;
 @Entity
 public class Product implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String name;
-    private Double price;
-    private Integer score;
-    private String image;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String name;
+	private Double price;
+	private Double score;
+	private String image;
 
-    public Product() {
-    }
+	public Product() {
+	}
 
-    public Product(Integer id, String name, Double price, Integer score, String image) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.score = score;
-        this.image = image;
-    }
+	public Product(Integer id, String name, Double price, Double score, String image) {
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.score = score;
+		this.image = image;
+	}
 
-    public Integer getId() {
-        return id;
-    }
+	public Integer getId() {
+		return id;
+	}
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public Double getPrice() {
-        return price;
-    }
+	public Double getPrice() {
+		return price;
+	}
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
+	public void setPrice(Double price) {
+		this.price = price;
+	}
 
-    public Integer getScore() {
-        return score;
-    }
+	public Double getScore() {
+		return score;
+	}
 
-    public void setScore(Integer score) {
-        this.score = score;
-    }
+	public void setScore(Double score) {
+		this.score = score;
+	}
 
-    public String getImage() {
-        return image;
-    }
+	public String getImage() {
+		return image;
+	}
 
-    public void setImage(String image) {
-        this.image = image;
-    }
+	public void setImage(String image) {
+		this.image = image;
+	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return Objects.equals(id, product.id);
-    }
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
+		Product product = (Product) o;
+		return Objects.equals(id, product.id);
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 }

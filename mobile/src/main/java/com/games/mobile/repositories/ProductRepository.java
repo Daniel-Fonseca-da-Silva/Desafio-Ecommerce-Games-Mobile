@@ -7,6 +7,4 @@ import org.springframework.stereotype.Service;
 @Service
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
-
-
 }
