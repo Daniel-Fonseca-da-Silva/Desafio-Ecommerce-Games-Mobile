@@ -18,20 +18,20 @@ export class ButtonsComponent implements OnInit {
   }
 
   get freteProd(): number {
-      return this.FRETE;
+    return this.FRETE;
   }
 
   get subProd(): number {
     return this.subtotal = this.FRETE + this.calculoService.addPreco();
+
   }
 
   get totalProd(): number {
-    if(this.total < 250) {
-     this.total = this.calculoService.addPreco() + this.FRETE;
-    }
-    else
-    {
+    if (this.total >= 250) {
       this.total = this.calculoService.addPreco();
+    }
+    else {
+      this.total = this.calculoService.addPreco() + this.FRETE;
     }
 
     return this.total;
