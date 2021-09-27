@@ -33,9 +33,15 @@
   <mat-grid-tile>
     <mat-list role="list">
       <h1>Carrinho</h1>
-      <mat-list-item role="listitem">Frete: </mat-list-item>
-      <mat-list-item role="listitem">Subtotal: </mat-list-item>
-      <mat-list-item role="listitem">Total: </mat-list-item>
+      <mat-list-item role="listitem">Frete:
+        <input type="text" disabled [value]="freteProd"> 
+      </mat-list-item>
+      <mat-list-item role="listitem">Subtotal:
+        <input type="text" disabled [value]="subProd"> 
+      </mat-list-item>
+      <mat-list-item role="listitem">Total:
+        <input type="text" disabled [value]="totalProd"> 
+      </mat-list-item>
     </mat-list>
   </mat-grid-tile>
 </mat-grid-list>
