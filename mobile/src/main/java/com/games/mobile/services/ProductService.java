@@ -25,4 +25,9 @@ public class ProductService {
 		return list;
 	}
 
+	public Product create(Product obj) {
+		obj.setId(null);
+		return repository.save(obj);
+	}
+
 }
